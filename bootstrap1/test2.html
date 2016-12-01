@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- X-UA-Compatible是IE8的一个专有属性，它告诉IE8采用何种IE版本去渲染网页 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <!-- 引入css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+    <!--html5shiv: 让低版本的ie浏览器支持html5新的标签属性 -->
+    <!--respond: 让低版本的ie浏览器支持媒体查询 -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="bs-example tooltip-demo">
+        <div class="bs-example-tooltips">
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="1111111111" data-original-title="Tooltip on left">Tooltip on left</button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="22222222" data-original-title="Tooltip on top">Tooltip on top</button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="33333333" data-original-title="Tooltip on bottom">Tooltip on bottom</button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="444444444" data-original-title="Tooltip on right">Tooltip on right</button>
+        </div>
+    </div>
+
+    <hr>
+    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    <hr>
+    <div class="bs-example bs-example-standalone">
+        <div class="alert alert-warning alert-dismissible fade in" role="alert">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+        </div>
+        <div class="alert alert-danger alert-dismissible fade in" role="alert">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h4>Oh snap! You got an error!</h4>
+            <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p>
+                <button type="button" class="btn btn-danger">Take this action</button>
+                <button type="button" class="btn btn-default">Or do this</button>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        Single toggle
+    </button>
+    <br>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+        </label>
+        <label class="btn btn-primary">
+            <input type="checkbox" autocomplete="off"> Checkbox 2
+        </label>
+        <label class="btn btn-primary">
+            <input type="checkbox" autocomplete="off"> Checkbox 3
+        </label>
+    </div>
+    <br>
+    <style type="text/css">
+    .panel-default > .panel-heading {
+        background: orange;
+    }
+    </style>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1
+        </label>
+        <label class="btn btn-primary active">
+            <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+        </label>
+    </div>
+    <br>
+    <hr>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+    			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    			          Collapsible Group Item #1
+    			        </a>
+    		      	</h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+    			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+    			          Collapsible Group Item #2
+    			        </a>
+    			      </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+    			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+    			          Collapsible Group Item #3
+    			        </a>
+    			      </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse  in" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+  <!--  <div class="col-md-3">
+      <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" role="complementary">
+          <ul class="nav bs-docs-sidenav">
+              <li class="">
+                  <a href="#js-overview">概览</a>
+                  <ul class="nav">
+                      <li class=""><a href="#js-individual-compiled">单个还是全部引入</a></li>
+                      <li class=""><a href="#js-data-attrs">data 属性</a></li>
+                      <li class=""><a href="#js-programmatic-api">编程方式的 API</a></li>
+                      <li class=""><a href="#js-noconflict">避免命名空间冲突</a></li>
+                      <li class=""><a href="#js-events">事件</a></li>
+                      <li><a href="#js-disabled">浏览器的 JavaScript 被禁用的情况</a></li>
+                      <li class=""><a href="#callout-third-party-libs">第三方工具库</a></li>
+                  </ul>
+              </li>
+              <li class=""><a href="#transitions">过渡效果</a></li>
+              <li class="">
+                  <a href="#modals">模态框</a>
+                  <ul class="nav">
+                      <li class=""><a href="#modals-examples">实例</a></li>
+                      <li class=""><a href="#modals-sizes">Sizes</a></li>
+                      <li class=""><a href="#modals-remove-animation">Remove animation</a></li>
+                      <li class=""><a href="#modals-usage">用法</a></li>
+                  </ul>
+              </li>
+              <li class="">
+                  <a href="#dropdowns">下拉菜单</a>
+                  <ul class="nav">
+                      <li class=""><a href="#dropdowns-examples">实例</a></li>
+                      <li class=""><a href="#dropdowns-usage">用法</a></li>
+                  </ul>
+              </li>
+              <li class="">
+                  <a href="#scrollspy">滚动监听</a>
+                  <ul class="nav">
+                      <li class=""><a href="#scrollspy-examples">实例</a></li>
+                      <li class=""><a href="#scrollspy-usage">用法</a></li>
+                  </ul>
+              </li>
+              <li class="">
+                  <a href="#tabs">标签页</a>
+                  <ul class="nav">
+                      <li class=""><a href="#tabs-examples">实例</a></li>
+                      <li class=""><a href="#tabs-usage">用法</a></li>
+                  </ul>
+              </li>
+              <li class="">
+                  <a href="#tooltips">工具提示</a>
+                  <ul class="nav">
+                      <li class=""><a href="#tooltips-examples">实例</a></li>
+                      <li class=""><a href="#tooltips-usage">用法</a></li>
+                  </ul>
+              </li>
+              <li class="">
+                  <a href="#popovers">弹出框</a>
+                  <ul class="nav">
+                      <li class=""><a href="#popovers-examples">实例</a></li>
+                      <li class=""><a href="#popovers-usage">用法</a></li>
+                  </ul>
+              </li>
+              <li class="">
+                  <a href="#alerts">警告框</a>
+                  <ul class="nav">
+                      <li class=""><a href="#alerts-examples">警告框实例</a></li>
+                      <li class=""><a href="#alerts-usage">用法</a></li>
+                  </ul>
+              </li>
+              <li class="">
+                  <a href="#buttons">按钮</a>
+                  <ul class="nav">
+                      <li class=""><a href="#buttons-stateful">Stateful</a></li>
+                      <li class=""><a href="#buttons-single-toggle">Single toggle</a></li>
+                      <li class=""><a href="#buttons-checkbox-radio">Checkbox / Radio</a></li>
+                      <li class=""><a href="#buttons-methods">方法</a></li>
+                  </ul>
+              </li>
+              <li class="">
+                  <a href="#collapse">Collapse</a>
+                  <ul class="nav">
+                      <li class=""><a href="#collapse-examples">实例</a></li>
+                      <li class=""><a href="#collapse-usage">用法</a></li>
+                  </ul>
+              </li>
+              <li class="">
+                  <a href="#carousel">Carousel</a>
+                  <ul class="nav">
+                      <li class=""><a href="#carousel-examples">实例</a></li>
+                      <li class=""><a href="#carousel-usage">用法</a></li>
+                  </ul>
+              </li>
+              <li class="active">
+                  <a href="#affix">Affix</a>
+                  <ul class="nav">
+                      <li class=""><a href="#affix-examples">实例</a></li>
+                      <li class="active"><a href="#affix-usage">用法</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <a class="back-to-top" href="#top">
+            返回顶部
+          </a>
+          <a href="#" class="bs-docs-theme-toggle" role="button">Disable theme preview</a>
+      </div>
+  </div> -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$("[data-toggle='tooltip']").tooltip();
+    		$("[data-toggle='popover']").popover();
+    	});
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- X-UA-Compatible是IE8的一个专有属性，它告诉IE8采用何种IE版本去渲染网页 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <!-- 引入css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+    <!--html5shiv: 让低版本的ie浏览器支持html5新的标签属性 -->
+    <!--respond: 让低版本的ie浏览器支持媒体查询 -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+        Loading state
+    </button>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+    $(function() {
+         $('.btn').on('click', function() {
+             $(this).button('loading').delay(1000).queue(function(){
+                $(this).button('reset');
+             })
+         })
+    })
+    </script>
+</body>
+
+</html>

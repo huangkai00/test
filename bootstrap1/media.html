@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>媒体查询(media query)</title>
+	<link rel="stylesheet" type="text/css" href="css1.css" media="screen and (max-width:400px)">
+	<style type="text/css">
+		/*@media screen and */
+		@media screen and (max-width: 400px){
+			body{
+				background: red;
+			}
+			ul{
+
+			}
+		}
+		
+		@media screen and (min-width: 401px) and (max-width: 800px){
+			body{
+				background: green;
+			}
+		}
+
+		@media screen and (min-width: 801px){
+			body{
+				/*background: blue;*/
+			}
+		}
+	</style>
+</head>
+<body>
+	  <div class="dropup">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+    </div>
+	 
+</body>
+</html>
